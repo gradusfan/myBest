@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace FanSwProject
 {
-    public partial class Form2 : Form
+    public partial class Form_set : Form
     {
-        public Form2()
+        public Form_set()
         {
             InitializeComponent();
         }

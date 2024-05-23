@@ -1,7 +1,7 @@
 ﻿
 namespace FanSwProject
 {
-    partial class Form1
+    partial class Form_main
     {
         /// <summary>
         /// Required designer variable.
@@ -29,20 +29,20 @@ namespace FanSwProject
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_main));
             this.btn_start = new System.Windows.Forms.Button();
             this.btn_stop = new System.Windows.Forms.Button();
             this.btn_hand = new System.Windows.Forms.Button();
             this.btn_set = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
-            this.butt0n7 = new System.Windows.Forms.Button();
+            this.btn_quite = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelMain = new System.Windows.Forms.Panel();
             this.groudbox1 = new System.Windows.Forms.GroupBox();
+            this.btn_home = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.btn_rest = new System.Windows.Forms.Button();
             this.btn_camera = new System.Windows.Forms.Button();
-            this.btn_home = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groudbox1.SuspendLayout();
             this.SuspendLayout();
@@ -58,7 +58,7 @@ namespace FanSwProject
             this.btn_start.TabIndex = 1;
             this.btn_start.Text = "    运行";
             this.btn_start.UseVisualStyleBackColor = true;
-            this.btn_start.Click += new System.EventHandler(this.buttonLogin_Click);
+            this.btn_start.Click += new System.EventHandler(this.btn_start_Click);
             // 
             // btn_stop
             // 
@@ -71,6 +71,7 @@ namespace FanSwProject
             this.btn_stop.TabIndex = 2;
             this.btn_stop.Text = "    停止";
             this.btn_stop.UseVisualStyleBackColor = true;
+            this.btn_stop.Click += new System.EventHandler(this.btn_stop_Click);
             // 
             // btn_hand
             // 
@@ -96,7 +97,7 @@ namespace FanSwProject
             this.btn_set.TabIndex = 4;
             this.btn_set.Text = "   设置";
             this.btn_set.UseVisualStyleBackColor = true;
-            this.btn_set.Click += new System.EventHandler(this.button5_Click);
+            this.btn_set.Click += new System.EventHandler(this.btn_set_Click);
             // 
             // button6
             // 
@@ -110,21 +111,22 @@ namespace FanSwProject
             this.button6.Text = "    日志";
             this.button6.UseVisualStyleBackColor = true;
             // 
-            // butt0n7
+            // btn_quite
             // 
-            this.butt0n7.Image = ((System.Drawing.Image)(resources.GetObject("butt0n7.Image")));
-            this.butt0n7.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.butt0n7.Location = new System.Drawing.Point(7, 851);
-            this.butt0n7.Margin = new System.Windows.Forms.Padding(4);
-            this.butt0n7.Name = "butt0n7";
-            this.butt0n7.Size = new System.Drawing.Size(155, 65);
-            this.butt0n7.TabIndex = 6;
-            this.butt0n7.Text = "   关闭";
-            this.butt0n7.UseVisualStyleBackColor = true;
-            this.butt0n7.Click += new System.EventHandler(this.butt0n7_Click);
+            this.btn_quite.Image = ((System.Drawing.Image)(resources.GetObject("btn_quite.Image")));
+            this.btn_quite.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_quite.Location = new System.Drawing.Point(7, 851);
+            this.btn_quite.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_quite.Name = "btn_quite";
+            this.btn_quite.Size = new System.Drawing.Size(155, 65);
+            this.btn_quite.TabIndex = 6;
+            this.btn_quite.Text = "   关闭";
+            this.btn_quite.UseVisualStyleBackColor = true;
+            this.btn_quite.Click += new System.EventHandler(this.btn_quite_Click);
             // 
             // pictureBox1
             // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(0, 7);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
@@ -146,7 +148,7 @@ namespace FanSwProject
             // 
             this.groudbox1.Controls.Add(this.btn_hand);
             this.groudbox1.Controls.Add(this.btn_home);
-            this.groudbox1.Controls.Add(this.butt0n7);
+            this.groudbox1.Controls.Add(this.btn_quite);
             this.groudbox1.Controls.Add(this.button2);
             this.groudbox1.Controls.Add(this.btn_start);
             this.groudbox1.Controls.Add(this.button6);
@@ -161,6 +163,19 @@ namespace FanSwProject
             this.groudbox1.TabIndex = 9;
             this.groudbox1.TabStop = false;
             this.groudbox1.Text = "菜单";
+            // 
+            // btn_home
+            // 
+            this.btn_home.Image = ((System.Drawing.Image)(resources.GetObject("btn_home.Image")));
+            this.btn_home.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_home.Location = new System.Drawing.Point(7, 44);
+            this.btn_home.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_home.Name = "btn_home";
+            this.btn_home.Size = new System.Drawing.Size(149, 65);
+            this.btn_home.TabIndex = 10;
+            this.btn_home.Text = "    主页";
+            this.btn_home.UseVisualStyleBackColor = true;
+            this.btn_home.Click += new System.EventHandler(this.btn_home_Click);
             // 
             // button2
             // 
@@ -185,6 +200,7 @@ namespace FanSwProject
             this.btn_rest.TabIndex = 9;
             this.btn_rest.Text = "    复位";
             this.btn_rest.UseVisualStyleBackColor = true;
+            this.btn_rest.Click += new System.EventHandler(this.btn_rest_Click);
             // 
             // btn_camera
             // 
@@ -197,18 +213,7 @@ namespace FanSwProject
             this.btn_camera.TabIndex = 7;
             this.btn_camera.Text = "    视觉";
             this.btn_camera.UseVisualStyleBackColor = true;
-            // 
-            // btn_home
-            // 
-            this.btn_home.Image = ((System.Drawing.Image)(resources.GetObject("btn_home.Image")));
-            this.btn_home.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_home.Location = new System.Drawing.Point(7, 44);
-            this.btn_home.Margin = new System.Windows.Forms.Padding(4);
-            this.btn_home.Name = "btn_home";
-            this.btn_home.Size = new System.Drawing.Size(149, 65);
-            this.btn_home.TabIndex = 10;
-            this.btn_home.Text = "    主页";
-            this.btn_home.UseVisualStyleBackColor = true;
+            this.btn_camera.Click += new System.EventHandler(this.btn_camera_Click);
             // 
             // Form1
             // 
@@ -239,7 +244,7 @@ namespace FanSwProject
         private System.Windows.Forms.Button btn_hand;
         private System.Windows.Forms.Button btn_set;
         private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button butt0n7;
+        private System.Windows.Forms.Button btn_quite;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panelMain;
         private System.Windows.Forms.GroupBox groudbox1;

@@ -1,7 +1,7 @@
 ﻿
 namespace FanSwProject
 {
-    partial class Form2
+    partial class Form_set
     {
         /// <summary>
         /// Required designer variable.
@@ -34,20 +34,20 @@ namespace FanSwProject
             // 
             // metroDateTime1
             // 
-            this.metroDateTime1.Location = new System.Drawing.Point(663, 314);
+            this.metroDateTime1.Location = new System.Drawing.Point(12, 75);
             this.metroDateTime1.MinimumSize = new System.Drawing.Size(0, 29);
             this.metroDateTime1.Name = "metroDateTime1";
             this.metroDateTime1.Size = new System.Drawing.Size(200, 29);
             this.metroDateTime1.TabIndex = 0;
             // 
-            // Form2
+            // Form_set
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1714, 1047);
             this.Controls.Add(this.metroDateTime1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Form2";
+            this.Name = "Form_set";
             this.Text = "Form2";
             this.ResumeLayout(false);
 
