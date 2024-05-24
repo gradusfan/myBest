@@ -1,5 +1,5 @@
 ﻿
-namespace FanSwProject.UserCtrol
+namespace FanSwProject
 {
     partial class UserControl_serialPort
     {
@@ -187,7 +187,7 @@ namespace FanSwProject.UserCtrol
             this.txtRecPort1.Location = new System.Drawing.Point(164, 116);
             this.txtRecPort1.Multiline = true;
             this.txtRecPort1.Name = "txtRecPort1";
-            this.txtRecPort1.Size = new System.Drawing.Size(153, 77);
+            this.txtRecPort1.Size = new System.Drawing.Size(140, 77);
             this.txtRecPort1.TabIndex = 24;
             // 
             // txtSendPort1

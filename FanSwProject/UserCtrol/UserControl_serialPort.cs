@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using FanSwProject.commonlib;
 
-namespace FanSwProject.UserCtrol
+namespace FanSwProject
 {
     public partial class UserControl_serialPort : UserControl
     {
