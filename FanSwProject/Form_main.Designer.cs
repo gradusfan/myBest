@@ -215,7 +215,7 @@ namespace FanSwProject
             this.btn_camera.UseVisualStyleBackColor = true;
             this.btn_camera.Click += new System.EventHandler(this.btn_camera_Click);
             // 
-            // Form1
+            // Form_main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -225,9 +225,10 @@ namespace FanSwProject
             this.Controls.Add(this.pictureBox1);
             this.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.Margin = new System.Windows.Forms.Padding(4);
-            this.Name = "Form1";
+            this.Name = "Form_main";
             this.Padding = new System.Windows.Forms.Padding(0, 60, 0, 0);
             this.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.ShadowType = MetroFramework.Forms.MetroFormShadowType.None;
             this.Style = MetroFramework.MetroColorStyle.Orange;
             this.TransparencyKey = System.Drawing.Color.SkyBlue;
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

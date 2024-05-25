@@ -33,6 +33,13 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="DMSkin, Version=0.3.0.6, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DMSkin.dll</HintPath>
+    </Reference>
+    <Reference Include="halcondotnet, Version=18.11.3.0, Culture=neutral, PublicKeyToken=4973bed59ddbf2b8, processorArchitecture=MSIL">
+      <HintPath>..\packages\HalconDotNet.18.11.3\lib\net35\halcondotnet.dll</HintPath>
+    </Reference>
     <Reference Include="MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
       <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.dll</HintPath>
     </Reference>
@@ -53,6 +60,9 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="WeifenLuo.WinFormsUI.Docking">
+      <HintPath>..\VisionTool\bin\Debug\WeifenLuo.WinFormsUI.Docking.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="commonlib\LogRecord.cs" />
@@ -69,11 +79,11 @@
     <Compile Include="Form_set.Designer.cs">
       <DependentUpon>Form_set.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form3.cs">
+    <Compile Include="Form_Crama.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form3.Designer.cs">
-      <DependentUpon>Form3.cs</DependentUpon>
+    <Compile Include="Form_Crama.Designer.cs">
+      <DependentUpon>Form_Crama.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -91,8 +101,8 @@
     <EmbeddedResource Include="Form_set.resx">
       <DependentUpon>Form_set.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form3.resx">
-      <DependentUpon>Form3.cs</DependentUpon>
+    <EmbeddedResource Include="Form_Crama.resx">
+      <DependentUpon>Form_Crama.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -115,7 +125,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
     <Content Include="Resources\log.jpg" />
     <None Include="Resources\LOG.png" />
@@ -124,6 +133,20 @@
     <Content Include="Resources\设置.png" />
     <Content Include="Resources\退出.png" />
     <Content Include="Resources\首页.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\RS232_IO\RS232_IO.csproj">
+      <Project>{e9d72ec2-b592-4451-ab7f-cc39adf2e3e4}</Project>
+      <Name>RS232_IO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\VisionTool\VisionTool.csproj">
+      <Project>{d5d4fe99-f107-49cb-89f7-62eec87ba32c}</Project>
+      <Name>VisionTool</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\XFF_vision\XFF_Vision.csproj">
+      <Project>{b1f46706-40a9-49ac-a1bd-a58ceb1aa358}</Project>
+      <Name>XFF_Vision</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

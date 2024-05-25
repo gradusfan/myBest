@@ -1,7 +1,7 @@
 ﻿
 namespace FanSwProject
 {
-    partial class Form3
+    partial class Form_Crama
     {
         /// <summary>
         /// Required designer variable.

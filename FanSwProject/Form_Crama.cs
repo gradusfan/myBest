@@ -7,14 +7,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using XFF_Vision;
 
 namespace FanSwProject
 {
-    public partial class Form3 : Form
+    public partial class Form_Crama : Form
     {
-        public Form3()
+      
+        public Form_Crama()
         {
             InitializeComponent();
+          
         }
     }
 }
