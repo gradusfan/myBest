@@ -31,6 +31,7 @@
             HalconDotNet.HWindow hWindow1 = new HalconDotNet.HWindow();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_ImageWindow));
             this.halconView1 = new ViewControl.HalconView();
+            this.halconView1 = new ViewControl.HalconView();
             this.SuspendLayout();
             // 
             // halconView1

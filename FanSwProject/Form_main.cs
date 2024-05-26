@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MetroFramework.Forms;
-using XFF_Vision;
+
 
 namespace FanSwProject
 {
@@ -18,7 +18,7 @@ namespace FanSwProject
 
         private Form_set form_setParam = new Form_set();
         private Form_Crama form3 = new Form_Crama();
-        public frm_VisionRun frm_VisionRun = new frm_VisionRun();
+        
 
         public Form_main()
         {
@@ -55,7 +55,7 @@ namespace FanSwProject
         //手动按钮
         private void btn_hand_Click(object sender, EventArgs e)
         {
-            Load_Form(form3);
+          
         }
 
         
@@ -73,8 +73,7 @@ namespace FanSwProject
         private void btn_camera_Click(object sender, EventArgs e)
         {
 
-            //Load_Form(form3);
-            frm_VisionRun.Show();
+    
 
         }
 
@@ -88,6 +87,7 @@ namespace FanSwProject
 
         private void btn_set_Click(object sender, EventArgs e)
         {
+            Load_Form(form_setParam);
         }
 
 

@@ -1,4 +1,5 @@
-﻿using System;
+﻿
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -8,33 +9,15 @@ using System.Threading.Tasks;
 
 namespace FanSwProject.commonlib
 {
-    public struct serialParam
-    {
-        public string Name { get; set; }
-
-        public string PortName { get; set; }
-        public int Baudrate { get; set; }
-        public int DataBit { get; set; }
-
-        public int Stopbit { get; set; }
-        public int parity { get; set; }
-
-      
-    }
-
-
-
-        
-
-
-    class ReadandWriteINI
+   
+   public class ReadandWriteINI
     {
         #region 引用系统自带的 Kenl32.dll
 
         [DllImport("kernel32")] //win32 dll 对应的命令
 
         //写配置文件ini 返回0 表示失败的 非0 表示成功（C# 掉用非托管类型的DLL）
-        private static extern long WritePrivateProfileString(string section, serialParam serialParam, string filePath);
+        private static extern long WritePrivateProfileString(string section, string key1, string value1, string filePath);
 
         [DllImport("kernel32")] //win32 dll 对应的命令
 
@@ -68,19 +51,33 @@ namespace FanSwProject.commonlib
 
 
 
-        public static bool WriteIni(string Section, serialParam serialParam, string iniFilePath)
+        public static bool WriteIni(string section, string key1, string value1, string iniFilePath)
         {
 
             if (File.Exists(iniFilePath))
             {
 
-                return WritePrivateProfileString(Section,  serialParam, iniFilePath) != 0;
+                return WritePrivateProfileString(section,key1, value1,iniFilePath) != 0;
 
             }
+            else
+            {
+                CreateIniIfNotExists(iniFilePath);
+                return false;
 
-            return false;
-
+            }
+           
         }
+
+        public static void CreateIniIfNotExists(string iniFilePath)
+        {
+            if (!File.Exists(iniFilePath))
+            {
+                File.Create(iniFilePath).Close();
+            }
+        }
+
+
 
         #endregion
     }

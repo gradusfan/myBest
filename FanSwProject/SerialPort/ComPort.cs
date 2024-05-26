@@ -40,11 +40,11 @@ namespace FanSwProject
                 catch
                 {
 
-                    portParameter.tag_baudRate = 9600;
-                    portParameter.tag_Parity = Parity.None;
-                    portParameter.tag_databits = 8;
-                    portParameter.tag_stopBits = StopBits.One;
-                    serialPort = new SerialPort(portParameter.tag_portName, portParameter.tag_baudRate, portParameter.tag_Parity, portParameter.tag_databits, portParameter.tag_stopBits);
+                    //portParameter.tag_baudRate = 9600;
+                    //portParameter.tag_Parity = Parity.None;
+                    //portParameter.tag_databits = 8;
+                    //portParameter.tag_stopBits = StopBits.One;
+                    //serialPort = new SerialPort(portParameter.tag_portName, portParameter.tag_baudRate, portParameter.tag_Parity, portParameter.tag_databits, portParameter.tag_stopBits);
                 }
         }
 

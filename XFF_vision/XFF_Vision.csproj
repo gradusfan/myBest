@@ -90,9 +90,9 @@
     <Reference Include="DMSkin">
       <HintPath>..\..\..\xffvision\vision\XFF_vision\bin\x64\Debug\DMSkin.dll</HintPath>
     </Reference>
-    <Reference Include="halcondotnet, Version=12.0.0.0, Culture=neutral, PublicKeyToken=4973bed59ddbf2b8, processorArchitecture=MSIL">
+    <Reference Include="halcondotnet, Version=19.11.0.0, Culture=neutral, PublicKeyToken=4973bed59ddbf2b8, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\x64\Debug\halcondotnet.dll</HintPath>
+      <HintPath>C:\Users\GradusFan\OneDrive - manaflex llc\桌面\halcondotnet.dll</HintPath>
     </Reference>
     <Reference Include="hdevenginedotnet">
       <HintPath>bin\x64\Debug\hdevenginedotnet.dll</HintPath>
@@ -148,6 +148,10 @@
     <Reference Include="ViewControl, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\ViewControl\bin\Debug\ViewControl.dll</HintPath>
+    </Reference>
+    <Reference Include="VisionCon, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\VisionTool\obj\Debug\VisionCon.dll</HintPath>
     </Reference>
     <Reference Include="VisionTool">
       <HintPath>..\VisionTool\obj\Debug\VisionTool.dll</HintPath>

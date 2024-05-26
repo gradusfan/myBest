@@ -258,16 +258,16 @@ namespace FanSwProject
 
         private void WritePara()
         {
-            //串口参数new一个对象，用这个对象来接收界面参数的值，然后保存INI文件
-            serialParam serialParam = new serialParam();
-            serialParam.Name = this.textBox_name.Text.ToString();
-            serialParam.PortName = this.cmbPortName.TabIndex.ToString();
-            serialParam.Baudrate = this.cmbBaudRate.TabIndex;
-            serialParam.DataBit = this.cmbDataBits.TabIndex;
-            serialParam.Stopbit = this.cmbStopBits.TabIndex;
-            serialParam.parity = this.cmbParity.TabIndex;
+            ////串口参数new一个对象，用这个对象来接收界面参数的值，然后保存INI文件
+            //serialParam serialParam = new serialParam();
+            //serialParam.Name = this.textBox_name.Text.ToString();
+            //serialParam.PortName = this.cmbPortName.TabIndex.ToString();
+            //serialParam.Baudrate = this.cmbBaudRate.TabIndex;
+            //serialParam.DataBit = this.cmbDataBits.TabIndex;
+            //serialParam.Stopbit = this.cmbStopBits.TabIndex;
+            //serialParam.parity = this.cmbParity.TabIndex;
             
-            ReadandWriteINI.WriteIni(this.Name.ToString(), serialParam, strSavePath);
+            //ReadandWriteINI.WriteIni(this.Name.ToString(), serialParam, strSavePath);
         }
 
 
