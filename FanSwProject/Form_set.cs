@@ -52,8 +52,8 @@ namespace FanSwProject
 
         //保存界面UI参数
 
-        private string iniFilePath  ="d:\\fanData\\serialParam\\Settings"+ DateTime.Now.ToString("yyyyMM")+"\\Port.ini";
-
+        private string iniFilePath  = @"d:\fanData\serialParam\Settings\Port.ini";
+        private string iniFilePath2 = @"d:\fanData\serialParam\Settings\interPort.ini";
         private void btn_saveComPram_Click(object sender, EventArgs e)
         {
 
@@ -149,6 +149,27 @@ namespace FanSwProject
 
         }
 
-      
+        private void button_saveParam2_Click(object sender, EventArgs e)
+        {
+            Config.SetPageParam("设置网口参数", "IP", cmbPortName_1.Text);
+            Config.SetPageParam("设置参数参数", "波特率", cmbBaudRate_1.Text);
+            Config.SetPageParam("设置参数参数", "数据位", cmbDataBits_1.Text);
+            Config.SetPageParam("设置参数参数", "停止位", cmbStopBits_1.Text);
+            Config.SetPageParam("设置参数参数", "校验位", cmbParity_1.Text);
+
+            ReadandWriteINI.WriteIni("网口1", "IP", textBox_IP1.Text, iniFilePath2);
+            ReadandWriteINI.WriteIni("网口1", "Port", textBox_Port1.Text, iniFilePath2);
+            ReadandWriteINI.WriteIni("网口2", "IP", textBox_IP2.Text, iniFilePath2);
+            ReadandWriteINI.WriteIni("网口2", "Port", textBox_Port2.Text, iniFilePath2);
+            ReadandWriteINI.WriteIni("网口3", "IP", textBox_IP3.Text, iniFilePath2);
+            ReadandWriteINI.WriteIni("网口3", "Port", textBox_Port3.Text, iniFilePath2);
+            ReadandWriteINI.WriteIni("网口4", "IP", textBox_IP4.Text, iniFilePath2);
+            ReadandWriteINI.WriteIni("网口4", "Port", textBox_Port4.Text, iniFilePath2);
+
+
+
+
+
+        }
     }
 }

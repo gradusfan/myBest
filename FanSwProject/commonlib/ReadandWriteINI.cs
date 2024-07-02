@@ -62,6 +62,7 @@ namespace FanSwProject.commonlib
             }
             else
             {
+                
                 CreateIniIfNotExists(iniFilePath);
                 return false;
 
@@ -73,6 +74,7 @@ namespace FanSwProject.commonlib
         {
             if (!File.Exists(iniFilePath))
             {
+               
                 File.Create(iniFilePath).Close();
             }
         }
