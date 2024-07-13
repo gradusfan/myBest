@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MetroFramework.Forms;
+using BasicDemo;
 
 
 namespace FanSwProject
@@ -17,8 +18,8 @@ namespace FanSwProject
 
 
         private Form_set form_setParam = new Form_set();
-        private Form_Crama form3 = new Form_Crama();
-        
+        private Form_Crama form_Crama = new Form_Crama();
+        private BasicDemo.Form1 form1 = new Form1();
 
         public Form_main()
         {
@@ -73,7 +74,7 @@ namespace FanSwProject
         private void btn_camera_Click(object sender, EventArgs e)
         {
 
-    
+            Load_Form(form_Crama);
 
         }
 

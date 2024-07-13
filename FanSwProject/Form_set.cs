@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DMSkin.Win32;
 using FanSwProject.commonlib;
 
 
@@ -22,6 +23,7 @@ namespace FanSwProject
             InitializeComponent();
 
             LoadserialParam();
+            LoadNetParam();
 
             ComPort comPort1 = new ComPort();
             ComPort comPort2 = new ComPort();
@@ -31,23 +33,7 @@ namespace FanSwProject
 
         }
 
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+       
 
 
         //保存界面UI参数
@@ -148,6 +134,20 @@ namespace FanSwProject
             cmbParity_5.Text = ReadandWriteINI.ReadIni("串口5", "校验位", "", iniFilePath);
 
         }
+        private void LoadNetParam()
+        {
+            this.textBox_IP1.Text = ReadandWriteINI.ReadIni("网口1", "IP", "", iniFilePath2);
+            this.textBox_Port1.Text = ReadandWriteINI.ReadIni("网口1", "Port", "", iniFilePath2);
+            this.textBox_IP2.Text = ReadandWriteINI.ReadIni("网口2", "IP", "", iniFilePath2);
+            this.textBox_Port2.Text = ReadandWriteINI.ReadIni("网口2", "Port", "", iniFilePath2);
+            this.textBox_IP3.Text = ReadandWriteINI.ReadIni("网口3", "IP", "", iniFilePath2);
+            this.textBox_Port3.Text = ReadandWriteINI.ReadIni("网口3", "Port", "", iniFilePath2);
+            this.textBox_IP4.Text = ReadandWriteINI.ReadIni("网口4", "IP", "", iniFilePath2);
+            this.textBox_Port4.Text = ReadandWriteINI.ReadIni("网口4", "Port", "", iniFilePath2);
+            this.textBox_IP5.Text = ReadandWriteINI.ReadIni("网口5", "IP", "", iniFilePath2);
+            this.textBox_Port5.Text = ReadandWriteINI.ReadIni("网口5", "Port", "", iniFilePath2);
+        }
+
 
         private void button_saveParam2_Click(object sender, EventArgs e)
         {
@@ -157,17 +157,27 @@ namespace FanSwProject
             Config.SetPageParam("设置参数参数", "停止位", cmbStopBits_1.Text);
             Config.SetPageParam("设置参数参数", "校验位", cmbParity_1.Text);
 
-            ReadandWriteINI.WriteIni("网口1", "IP", textBox_IP1.Text, iniFilePath2);
-            ReadandWriteINI.WriteIni("网口1", "Port", textBox_Port1.Text, iniFilePath2);
-            ReadandWriteINI.WriteIni("网口2", "IP", textBox_IP2.Text, iniFilePath2);
-            ReadandWriteINI.WriteIni("网口2", "Port", textBox_Port2.Text, iniFilePath2);
-            ReadandWriteINI.WriteIni("网口3", "IP", textBox_IP3.Text, iniFilePath2);
-            ReadandWriteINI.WriteIni("网口3", "Port", textBox_Port3.Text, iniFilePath2);
-            ReadandWriteINI.WriteIni("网口4", "IP", textBox_IP4.Text, iniFilePath2);
-            ReadandWriteINI.WriteIni("网口4", "Port", textBox_Port4.Text, iniFilePath2);
+            bool result1 = ReadandWriteINI.WriteIni("网口1", "IP", textBox_IP1.Text, iniFilePath2);
+            bool result2 = ReadandWriteINI.WriteIni("网口1", "Port", textBox_Port1.Text, iniFilePath2);
+            bool result3 = ReadandWriteINI.WriteIni("网口2", "IP", textBox_IP2.Text, iniFilePath2);
+            bool result4 = ReadandWriteINI.WriteIni("网口2", "Port", textBox_Port2.Text, iniFilePath2);
+            bool result5 = ReadandWriteINI.WriteIni("网口3", "IP", textBox_IP3.Text, iniFilePath2);
+            bool result6 = ReadandWriteINI.WriteIni("网口3", "Port", textBox_Port3.Text, iniFilePath2);
+            bool result7 = ReadandWriteINI.WriteIni("网口4", "IP", textBox_IP4.Text, iniFilePath2);
+            bool result8 = ReadandWriteINI.WriteIni("网口4", "Port", textBox_Port4.Text, iniFilePath2);
+            bool result9 = ReadandWriteINI.WriteIni("网口5", "IP", textBox_IP5.Text, iniFilePath2);
+            bool result10 = ReadandWriteINI.WriteIni("网口5", "Port", textBox_Port5.Text, iniFilePath2);
 
+            if (!result1 && !result2 && !result3 && result4 && !result5 && !result6 && !result7 && !result8 && !result9 && !result10)
+            {
 
+                MessageBox.Show("保存失败，网口参数文件不存在");
 
+            }
+            else
+            {
+                MessageBox.Show("网口参数保存成功");
+            }
 
 
         }
