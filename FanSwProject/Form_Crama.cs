@@ -42,8 +42,16 @@ namespace FanSwProject
 
         }
 
+        private void Form_Crama_Load(object sender, EventArgs e)
+        {
+            if (tabControl1.SelectedTab.Name == "tabPage1")
+            {
+                page.TopLevel = false;
+                page.FormBorderStyle = FormBorderStyle.None;
+                tabPage1.Controls.Add(page);
+                page.Show();
 
-
-       
+            }
+        }
     }
 }

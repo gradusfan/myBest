@@ -39,10 +39,10 @@ namespace FanSwProject
             // 
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Location = new System.Drawing.Point(-7, 12);
+            this.tabControl1.Location = new System.Drawing.Point(1, 12);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1783, 825);
+            this.tabControl1.Size = new System.Drawing.Size(1632, 973);
             this.tabControl1.TabIndex = 0;
             this.tabControl1.SelectedIndexChanged += new System.EventHandler(this.tabControl1_SelectedIndexChanged);
             // 
@@ -51,10 +51,10 @@ namespace FanSwProject
             this.tabPage1.Location = new System.Drawing.Point(4, 28);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(1775, 793);
+            this.tabPage1.Size = new System.Drawing.Size(1609, 757);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Tag = "tabPage1.form1";
-            this.tabPage1.Text = "Form1";
+            this.tabPage1.Text = "相机操作";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
             // tabPage2
@@ -62,7 +62,7 @@ namespace FanSwProject
             this.tabPage2.Location = new System.Drawing.Point(4, 28);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(1775, 807);
+            this.tabPage2.Size = new System.Drawing.Size(1624, 941);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Tag = "tabPage2.form2";
             this.tabPage2.Text = "form2";
@@ -73,11 +73,11 @@ namespace FanSwProject
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ClientSize = new System.Drawing.Size(1608, 1047);
+            this.ClientSize = new System.Drawing.Size(1625, 997);
             this.Controls.Add(this.tabControl1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form_Crama";
-          
+            this.Load += new System.EventHandler(this.Form_Crama_Load);
             this.tabControl1.ResumeLayout(false);
             this.ResumeLayout(false);
 
