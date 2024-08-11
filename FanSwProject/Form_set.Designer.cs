@@ -160,10 +160,10 @@ namespace FanSwProject
             // 
             this.metroTabControl1.Controls.Add(this.metroTabPage3);
             this.metroTabControl1.Controls.Add(this.metroTabPage4);
-            this.metroTabControl1.Location = new System.Drawing.Point(2, 4);
+            this.metroTabControl1.Location = new System.Drawing.Point(-11, 1);
             this.metroTabControl1.Name = "metroTabControl1";
             this.metroTabControl1.SelectedIndex = 1;
-            this.metroTabControl1.Size = new System.Drawing.Size(1708, 934);
+            this.metroTabControl1.Size = new System.Drawing.Size(1849, 1060);
             this.metroTabControl1.TabIndex = 1;
             this.metroTabControl1.UseSelectable = true;
             // 
@@ -181,7 +181,7 @@ namespace FanSwProject
             this.metroTabPage3.HorizontalScrollbarSize = 10;
             this.metroTabPage3.Location = new System.Drawing.Point(4, 38);
             this.metroTabPage3.Name = "metroTabPage3";
-            this.metroTabPage3.Size = new System.Drawing.Size(1700, 892);
+            this.metroTabPage3.Size = new System.Drawing.Size(1675, 884);
             this.metroTabPage3.TabIndex = 2;
             this.metroTabPage3.Text = "网口通讯参数";
             this.metroTabPage3.VerticalScrollbarBarColor = true;
@@ -1015,20 +1015,23 @@ namespace FanSwProject
             // 
             // metroTabPage4
             // 
+            this.metroTabPage4.AutoScroll = true;
             this.metroTabPage4.Controls.Add(this.button_saveParam2);
             this.metroTabPage4.Controls.Add(this.groupBox10);
             this.metroTabPage4.Controls.Add(this.groupBox9);
             this.metroTabPage4.Controls.Add(this.groupBox8);
             this.metroTabPage4.Controls.Add(this.groupBox7);
             this.metroTabPage4.Controls.Add(this.groupBox6);
+            this.metroTabPage4.HorizontalScrollbar = true;
             this.metroTabPage4.HorizontalScrollbarBarColor = true;
             this.metroTabPage4.HorizontalScrollbarHighlightOnWheel = false;
             this.metroTabPage4.HorizontalScrollbarSize = 10;
             this.metroTabPage4.Location = new System.Drawing.Point(4, 38);
             this.metroTabPage4.Name = "metroTabPage4";
-            this.metroTabPage4.Size = new System.Drawing.Size(1700, 892);
+            this.metroTabPage4.Size = new System.Drawing.Size(1841, 1018);
             this.metroTabPage4.TabIndex = 3;
             this.metroTabPage4.Text = "串口参数列表";
+            this.metroTabPage4.VerticalScrollbar = true;
             this.metroTabPage4.VerticalScrollbarBarColor = true;
             this.metroTabPage4.VerticalScrollbarHighlightOnWheel = false;
             this.metroTabPage4.VerticalScrollbarSize = 10;
@@ -1036,7 +1039,7 @@ namespace FanSwProject
             // button_saveParam2
             // 
             this.button_saveParam2.Location = new System.Drawing.Point(1562, 819);
-            this.button_saveParam2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button_saveParam2.Margin = new System.Windows.Forms.Padding(4);
             this.button_saveParam2.Name = "button_saveParam2";
             this.button_saveParam2.Size = new System.Drawing.Size(112, 34);
             this.button_saveParam2.TabIndex = 30;
@@ -1063,7 +1066,7 @@ namespace FanSwProject
             // button11
             // 
             this.button11.Location = new System.Drawing.Point(627, 46);
-            this.button11.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button11.Margin = new System.Windows.Forms.Padding(4);
             this.button11.Name = "button11";
             this.button11.Size = new System.Drawing.Size(112, 34);
             this.button11.TabIndex = 23;
@@ -1073,7 +1076,7 @@ namespace FanSwProject
             // button12
             // 
             this.button12.Location = new System.Drawing.Point(512, 48);
-            this.button12.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button12.Margin = new System.Windows.Forms.Padding(4);
             this.button12.Name = "button12";
             this.button12.Size = new System.Drawing.Size(112, 34);
             this.button12.TabIndex = 22;
@@ -1083,7 +1086,7 @@ namespace FanSwProject
             // textBox_Port5
             // 
             this.textBox_Port5.Location = new System.Drawing.Point(380, 48);
-            this.textBox_Port5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox_Port5.Margin = new System.Windows.Forms.Padding(4);
             this.textBox_Port5.Name = "textBox_Port5";
             this.textBox_Port5.Size = new System.Drawing.Size(120, 28);
             this.textBox_Port5.TabIndex = 21;
@@ -1102,7 +1105,7 @@ namespace FanSwProject
             // textBox_IP5
             // 
             this.textBox_IP5.Location = new System.Drawing.Point(94, 46);
-            this.textBox_IP5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox_IP5.Margin = new System.Windows.Forms.Padding(4);
             this.textBox_IP5.Name = "textBox_IP5";
             this.textBox_IP5.Size = new System.Drawing.Size(166, 28);
             this.textBox_IP5.TabIndex = 19;
@@ -1146,7 +1149,7 @@ namespace FanSwProject
             // button9
             // 
             this.button9.Location = new System.Drawing.Point(627, 46);
-            this.button9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button9.Margin = new System.Windows.Forms.Padding(4);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(112, 34);
             this.button9.TabIndex = 23;
@@ -1156,7 +1159,7 @@ namespace FanSwProject
             // button10
             // 
             this.button10.Location = new System.Drawing.Point(512, 48);
-            this.button10.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button10.Margin = new System.Windows.Forms.Padding(4);
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(112, 34);
             this.button10.TabIndex = 22;
@@ -1166,7 +1169,7 @@ namespace FanSwProject
             // textBox_Port4
             // 
             this.textBox_Port4.Location = new System.Drawing.Point(380, 48);
-            this.textBox_Port4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox_Port4.Margin = new System.Windows.Forms.Padding(4);
             this.textBox_Port4.Name = "textBox_Port4";
             this.textBox_Port4.Size = new System.Drawing.Size(120, 28);
             this.textBox_Port4.TabIndex = 21;
@@ -1185,7 +1188,7 @@ namespace FanSwProject
             // textBox_IP4
             // 
             this.textBox_IP4.Location = new System.Drawing.Point(94, 46);
-            this.textBox_IP4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox_IP4.Margin = new System.Windows.Forms.Padding(4);
             this.textBox_IP4.Name = "textBox_IP4";
             this.textBox_IP4.Size = new System.Drawing.Size(166, 28);
             this.textBox_IP4.TabIndex = 19;
@@ -1229,7 +1232,7 @@ namespace FanSwProject
             // button7
             // 
             this.button7.Location = new System.Drawing.Point(627, 46);
-            this.button7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button7.Margin = new System.Windows.Forms.Padding(4);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(112, 34);
             this.button7.TabIndex = 23;
@@ -1239,7 +1242,7 @@ namespace FanSwProject
             // button8
             // 
             this.button8.Location = new System.Drawing.Point(512, 48);
-            this.button8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button8.Margin = new System.Windows.Forms.Padding(4);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(112, 34);
             this.button8.TabIndex = 22;
@@ -1249,7 +1252,7 @@ namespace FanSwProject
             // textBox_Port3
             // 
             this.textBox_Port3.Location = new System.Drawing.Point(380, 48);
-            this.textBox_Port3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox_Port3.Margin = new System.Windows.Forms.Padding(4);
             this.textBox_Port3.Name = "textBox_Port3";
             this.textBox_Port3.Size = new System.Drawing.Size(120, 28);
             this.textBox_Port3.TabIndex = 21;
@@ -1268,7 +1271,7 @@ namespace FanSwProject
             // textBox_IP3
             // 
             this.textBox_IP3.Location = new System.Drawing.Point(94, 46);
-            this.textBox_IP3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox_IP3.Margin = new System.Windows.Forms.Padding(4);
             this.textBox_IP3.Name = "textBox_IP3";
             this.textBox_IP3.Size = new System.Drawing.Size(166, 28);
             this.textBox_IP3.TabIndex = 19;
@@ -1312,7 +1315,7 @@ namespace FanSwProject
             // button4
             // 
             this.button4.Location = new System.Drawing.Point(627, 46);
-            this.button4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button4.Margin = new System.Windows.Forms.Padding(4);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(112, 34);
             this.button4.TabIndex = 23;
@@ -1322,7 +1325,7 @@ namespace FanSwProject
             // button6
             // 
             this.button6.Location = new System.Drawing.Point(512, 48);
-            this.button6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button6.Margin = new System.Windows.Forms.Padding(4);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(112, 34);
             this.button6.TabIndex = 22;
@@ -1332,7 +1335,7 @@ namespace FanSwProject
             // textBox_Port2
             // 
             this.textBox_Port2.Location = new System.Drawing.Point(380, 48);
-            this.textBox_Port2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox_Port2.Margin = new System.Windows.Forms.Padding(4);
             this.textBox_Port2.Name = "textBox_Port2";
             this.textBox_Port2.Size = new System.Drawing.Size(120, 28);
             this.textBox_Port2.TabIndex = 21;
@@ -1351,7 +1354,7 @@ namespace FanSwProject
             // textBox_IP2
             // 
             this.textBox_IP2.Location = new System.Drawing.Point(94, 46);
-            this.textBox_IP2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox_IP2.Margin = new System.Windows.Forms.Padding(4);
             this.textBox_IP2.Name = "textBox_IP2";
             this.textBox_IP2.Size = new System.Drawing.Size(166, 28);
             this.textBox_IP2.TabIndex = 19;
@@ -1395,7 +1398,7 @@ namespace FanSwProject
             // btn_disconnection
             // 
             this.btn_disconnection.Location = new System.Drawing.Point(627, 46);
-            this.btn_disconnection.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_disconnection.Margin = new System.Windows.Forms.Padding(4);
             this.btn_disconnection.Name = "btn_disconnection";
             this.btn_disconnection.Size = new System.Drawing.Size(112, 34);
             this.btn_disconnection.TabIndex = 23;
@@ -1405,7 +1408,7 @@ namespace FanSwProject
             // btn_connection
             // 
             this.btn_connection.Location = new System.Drawing.Point(512, 48);
-            this.btn_connection.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_connection.Margin = new System.Windows.Forms.Padding(4);
             this.btn_connection.Name = "btn_connection";
             this.btn_connection.Size = new System.Drawing.Size(112, 34);
             this.btn_connection.TabIndex = 22;
@@ -1415,7 +1418,7 @@ namespace FanSwProject
             // textBox_Port1
             // 
             this.textBox_Port1.Location = new System.Drawing.Point(380, 48);
-            this.textBox_Port1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox_Port1.Margin = new System.Windows.Forms.Padding(4);
             this.textBox_Port1.Name = "textBox_Port1";
             this.textBox_Port1.Size = new System.Drawing.Size(120, 28);
             this.textBox_Port1.TabIndex = 21;
@@ -1434,7 +1437,7 @@ namespace FanSwProject
             // textBox_IP1
             // 
             this.textBox_IP1.Location = new System.Drawing.Point(94, 46);
-            this.textBox_IP1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox_IP1.Margin = new System.Windows.Forms.Padding(4);
             this.textBox_IP1.Name = "textBox_IP1";
             this.textBox_IP1.Size = new System.Drawing.Size(166, 28);
             this.textBox_IP1.TabIndex = 19;
@@ -1467,7 +1470,7 @@ namespace FanSwProject
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1697, 784);
+            this.ClientSize = new System.Drawing.Size(1800, 1050);
             this.Controls.Add(this.metroTabControl1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form_set";

@@ -39,7 +39,6 @@ namespace FanSwProject.commonlib
                 GetPrivateProfileString(Section, Key, NoText, temp, 1024, iniFilePath);
                 return temp.ToString();
 
-
             }
             else
             {
@@ -56,16 +55,12 @@ namespace FanSwProject.commonlib
 
             if (File.Exists(iniFilePath))
             {
-
                 return WritePrivateProfileString(section,key1, value1,iniFilePath) != 0;
-
             }
             else
             {
-                
                 CreateIniIfNotExists(iniFilePath);
                 return false;
-
             }
            
         }
@@ -74,7 +69,6 @@ namespace FanSwProject.commonlib
         {
             if (!File.Exists(iniFilePath))
             {
-               
                 File.Create(iniFilePath).Close();
             }
         }
