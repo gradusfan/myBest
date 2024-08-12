@@ -21,6 +21,7 @@ namespace FanSwProject
         private Form_Crama form_Crama = new Form_Crama();
         private BasicDemo.Form1 form1 = new Form1();
 
+        private Form_Mycrama form_Mycrama = new Form_Mycrama();
         public Form_main()
         {
             InitializeComponent();
@@ -63,7 +64,7 @@ namespace FanSwProject
 
         private void btn_stop_Click(object sender, EventArgs e)
         {
-
+            form_Mycrama.Show();
         }
 
         private void btn_rest_Click(object sender, EventArgs e)
