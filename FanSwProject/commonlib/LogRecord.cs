@@ -20,8 +20,8 @@ namespace FanSwProject
             try
             {
                 LogWriteLock1.EnterWriteLock();
-                string sFilePath = "D:\\运行日志\\操作日志\\" + DateTime.Now.ToString("yyyyMM") + "操作日志";
-                string sFileName = "操作日志." + DateTime.Now.ToString("dd") + ".log";
+                string sFilePath = "D:\\siren资料\\FanSwProject\\FanSwProject\\runinglog";
+                string sFileName = "操作日志." + DateTime.Now.ToString("yy-MM-dd") + ".log";
                 sFileName = sFilePath + "\\" + sFileName; //文件的绝对路径
 
                 if (!Directory.Exists(sFilePath))//验证路径是否存在
