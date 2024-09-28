@@ -72,6 +72,7 @@
             this.cbDeviceList.FormattingEnabled = true;
             resources.ApplyResources(this.cbDeviceList, "cbDeviceList");
             this.cbDeviceList.Name = "cbDeviceList";
+           
             // 
             // pictureBox1
             // 

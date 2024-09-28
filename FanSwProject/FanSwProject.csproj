@@ -189,6 +189,10 @@
     <Reference Include="log4net, Version=3.0.0.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
       <HintPath>..\packages\log4net.3.0.0\lib\netstandard2.0\log4net.dll</HintPath>
     </Reference>
+    <Reference Include="MvCamCtrl.Net, Version=0.0.0.0, Culture=neutral, PublicKeyToken=01e3fc1d84d12cbf, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\MvCamCtrl.Net.dll</HintPath>
+    </Reference>
     <Reference Include="SinglePointGrabModuCs, Version=1.0.0.0, Culture=neutral, PublicKeyToken=fb4f07aaff38d00b, processorArchitecture=MSIL">
       <Private>False</Private>
     </Reference>
@@ -596,6 +600,12 @@
     <Compile Include="commonlib\LogRecord.cs" />
     <Compile Include="commonlib\ReadandWriteINI.cs" />
     <Compile Include="config\config.cs" />
+    <Compile Include="Form_crameProcess.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_crameProcess.Designer.cs">
+      <DependentUpon>Form_crameProcess.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form_main.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -624,6 +634,9 @@
     <Compile Include="UserCtrol\UserControl_serialPort.Designer.cs">
       <DependentUpon>UserControl_serialPort.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Form_crameProcess.resx">
+      <DependentUpon>Form_crameProcess.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form_main.resx">
       <DependentUpon>Form_main.cs</DependentUpon>
     </EmbeddedResource>

@@ -48,9 +48,9 @@ namespace FanSwProject
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.vmProcedureConfigControl1);
-            this.groupBox1.Location = new System.Drawing.Point(12, 12);
+            this.groupBox1.Location = new System.Drawing.Point(-4, 46);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(704, 1120);
+            this.groupBox1.Size = new System.Drawing.Size(1381, 1086);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "流程显示区";
@@ -60,16 +60,16 @@ namespace FanSwProject
             this.vmProcedureConfigControl1.Dock = System.Windows.Forms.DockStyle.Left;
             this.vmProcedureConfigControl1.Location = new System.Drawing.Point(3, 24);
             this.vmProcedureConfigControl1.Name = "vmProcedureConfigControl1";
-            this.vmProcedureConfigControl1.Size = new System.Drawing.Size(682, 1093);
+            this.vmProcedureConfigControl1.Size = new System.Drawing.Size(1362, 1059);
             this.vmProcedureConfigControl1.TabIndex = 0;
 // TODO: “”的代码生成失败，原因是出现异常“无效的基元类型: System.IntPtr。请考虑使用 CodeObjectCreateExpression。”。
             // 
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.listBox1);
-            this.groupBox3.Location = new System.Drawing.Point(725, 620);
+            this.groupBox3.Location = new System.Drawing.Point(1383, 588);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(784, 339);
+            this.groupBox3.Size = new System.Drawing.Size(807, 475);
             this.groupBox3.TabIndex = 4;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "消息显示区";
@@ -78,7 +78,7 @@ namespace FanSwProject
             // 
             this.listBox1.FormattingEnabled = true;
             this.listBox1.ItemHeight = 18;
-            this.listBox1.Location = new System.Drawing.Point(6, 19);
+            this.listBox1.Location = new System.Drawing.Point(23, 27);
             this.listBox1.Name = "listBox1";
             this.listBox1.Size = new System.Drawing.Size(778, 436);
             this.listBox1.TabIndex = 0;
@@ -91,9 +91,9 @@ namespace FanSwProject
             this.groupBox2.Controls.Add(this.button3);
             this.groupBox2.Controls.Add(this.button2);
             this.groupBox2.Controls.Add(this.button1);
-            this.groupBox2.Location = new System.Drawing.Point(722, 25);
+            this.groupBox2.Location = new System.Drawing.Point(1383, 59);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(710, 326);
+            this.groupBox2.Size = new System.Drawing.Size(807, 293);
             this.groupBox2.TabIndex = 3;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "方案操作区";
@@ -158,10 +158,11 @@ namespace FanSwProject
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(2478, 1144);
+            this.ClientSize = new System.Drawing.Size(2211, 1188);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form_Mycrama";
             this.Text = "Form_Mycrama";
             this.groupBox1.ResumeLayout(false);

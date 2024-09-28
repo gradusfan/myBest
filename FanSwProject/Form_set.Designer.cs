@@ -160,10 +160,10 @@ namespace FanSwProject
             // 
             this.metroTabControl1.Controls.Add(this.metroTabPage3);
             this.metroTabControl1.Controls.Add(this.metroTabPage4);
-            this.metroTabControl1.Location = new System.Drawing.Point(-11, 1);
+            this.metroTabControl1.Location = new System.Drawing.Point(2, 12);
             this.metroTabControl1.Name = "metroTabControl1";
-            this.metroTabControl1.SelectedIndex = 1;
-            this.metroTabControl1.Size = new System.Drawing.Size(1849, 1060);
+            this.metroTabControl1.SelectedIndex = 0;
+            this.metroTabControl1.Size = new System.Drawing.Size(2233, 1244);
             this.metroTabControl1.TabIndex = 1;
             this.metroTabControl1.UseSelectable = true;
             // 
@@ -181,7 +181,7 @@ namespace FanSwProject
             this.metroTabPage3.HorizontalScrollbarSize = 10;
             this.metroTabPage3.Location = new System.Drawing.Point(4, 38);
             this.metroTabPage3.Name = "metroTabPage3";
-            this.metroTabPage3.Size = new System.Drawing.Size(1675, 884);
+            this.metroTabPage3.Size = new System.Drawing.Size(2225, 1202);
             this.metroTabPage3.TabIndex = 2;
             this.metroTabPage3.Text = "网口通讯参数";
             this.metroTabPage3.VerticalScrollbarBarColor = true;
@@ -353,7 +353,7 @@ namespace FanSwProject
             // 
             // btn_saveComPram
             // 
-            this.btn_saveComPram.Location = new System.Drawing.Point(1461, 820);
+            this.btn_saveComPram.Location = new System.Drawing.Point(2043, 1132);
             this.btn_saveComPram.Name = "btn_saveComPram";
             this.btn_saveComPram.Size = new System.Drawing.Size(172, 50);
             this.btn_saveComPram.TabIndex = 28;
@@ -1470,7 +1470,7 @@ namespace FanSwProject
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1800, 1050);
+            this.ClientSize = new System.Drawing.Size(2233, 1244);
             this.Controls.Add(this.metroTabControl1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form_set";

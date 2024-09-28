@@ -70,7 +70,8 @@ namespace FanSwProject
 
         private void btn_stop_Click(object sender, EventArgs e)
         {
-            form_Mycrama.Show();
+            
+            LoadForm(form_Mycrama);
         }
 
         private void btn_rest_Click(object sender, EventArgs e)

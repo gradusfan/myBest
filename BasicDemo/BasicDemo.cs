@@ -925,5 +925,7 @@ namespace BasicDemo
             m_bRecord = false;
             SetCtrlWhenStopRecord();
         }
+
+     
     }
 }
