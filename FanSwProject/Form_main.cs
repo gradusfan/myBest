@@ -23,6 +23,7 @@ namespace FanSwProject
         private Form currentForm;
         private Form_set form_setParam = new Form_set();
         private BasicDemo.Form1 form1 = new Form1();
+        private Form_crameProcess form_CrameProcess = new Form_crameProcess();
 
         private Form_Mycrama form_Mycrama = new Form_Mycrama();
         public Form_main()
@@ -82,7 +83,7 @@ namespace FanSwProject
         private void btn_camera_Click(object sender, EventArgs e)
         {
 
-            LoadForm(new BasicDemo.Form1());
+            LoadForm(form_CrameProcess);
 
         }
 
